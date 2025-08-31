@@ -7,7 +7,14 @@ import {
   RxLinkedinLogo,
 } from "react-icons/rx";
 
-export const SKILL_DATA = [
+interface SkillType {
+  skill_name: string;
+  image: string;
+  width: number;
+  height: number;
+}
+
+export const SKILL_DATA: SkillType[] = [
   {
     skill_name: "HTML",
     image: "html.png",
@@ -81,7 +88,7 @@ export const SKILL_DATA = [
     width: 40,
     height: 40,
   },
-] as const;
+];
 
 export const SOCIALS = [
   {
@@ -101,7 +108,7 @@ export const SOCIALS = [
   },
 ] as const;
 
-export const FRONTEND_SKILL = [
+export const FRONTEND_SKILL: SkillType[] = [
   {
     skill_name: "HTML",
     image: "html.png",
@@ -141,9 +148,9 @@ export const FRONTEND_SKILL = [
     width: 80,
     height: 80,
   },
-] as const;
+];
 
-export const BACKEND_SKILL = [
+export const BACKEND_SKILL: SkillType[] = [
   {
     skill_name: "Node.js",
     image: "node.png",
@@ -164,14 +171,79 @@ export const BACKEND_SKILL = [
   },
 
 
-] as const;
+];
 
-export const FULLSTACK_SKILL = [
-] as const;
+export const FULLSTACK_SKILL: SkillType[] = [
+  {
+    skill_name: "React Query",
+    image: "reactquery.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Type Script",
+    image: "ts.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Next js 13",
+    image: "next.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Framer Motion",
+    image: "framer.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    skill_name: "Stripe Payment",
+    image: "stripe.png",
+    width: 80,
+    height: 80,
+  },
+];
 
-export const OTHER_SKILL = [
-
-] as const;
+export const OTHER_SKILL: SkillType[] = [
+  {
+    skill_name: "Go",
+    image: "go.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Docker",
+    image: "docker.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "PostgreSQL",
+    image: "postgresql.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "MySQL",
+    image: "mysql.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "Prisma",
+    image: "prisma.png",
+    width: 60,
+    height: 60,
+  },
+  {
+    skill_name: "GraphQL",
+    image: "graphql.png",
+    width: 60,
+    height: 60,
+  },
+];
 
 export const PROJECTS = [
   {
